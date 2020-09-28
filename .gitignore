@@ -1,3 +1,8 @@
+# Filesystem
+.DS_Store
+
+## The remainder is boilerplate from Github's Node.gitignore
+
 # Logs
 logs
 *.log

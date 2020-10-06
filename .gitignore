@@ -1,6 +1,9 @@
 # Filesystem
 .DS_Store
 
+# Parcel
+.parcel-cache/
+
 ## The remainder is boilerplate from Github's Node.gitignore
 
 # Logs

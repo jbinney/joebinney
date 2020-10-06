@@ -4,7 +4,9 @@
   "description": "Interactive personal site for Joe Binney",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jbinney/joebinney/issues"
   },
-  "homepage": "https://github.com/jbinney/joebinney#readme"
+  "homepage": "https://github.com/jbinney/joebinney#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
 }

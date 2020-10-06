@@ -1,0 +1,19 @@
+{
+  "name": "joebinney",
+  "version": "1.0.0",
+  "description": "Interactive personal site for Joe Binney",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbinney/joebinney.git"
+  },
+  "author": "Joe Binney (https://joebinney.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbinney/joebinney/issues"
+  },
+  "homepage": "https://github.com/jbinney/joebinney#readme"
+}

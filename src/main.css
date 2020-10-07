@@ -1,0 +1,10 @@
+body {
+    background: #000;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#appCanvas {
+    width: min(100vw, 1.77777778 * 100vh);
+}

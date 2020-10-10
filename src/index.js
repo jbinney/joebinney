@@ -1,4 +1,6 @@
-import { Application, Text, TilingSprite } from 'pixi.js'
+import { Application, SCALE_MODES, settings, Text, TilingSprite } from 'pixi.js'
+
+settings.SCALE_MODE = SCALE_MODES.NEAREST
 
 const app = new Application({
     width: 480,

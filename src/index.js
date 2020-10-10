@@ -1,4 +1,7 @@
-import { Application, SCALE_MODES, settings, Text, TilingSprite } from 'pixi.js'
+import { Application, SCALE_MODES, settings, Sprite } from 'pixi.js'
+
+import roomUrl from 'url:/images/room.png'
+
 
 settings.SCALE_MODE = SCALE_MODES.NEAREST
 
@@ -11,11 +14,8 @@ app.view.id = 'app_canvas'
 const canvasContainer = document.getElementById('canvas_container')
 canvasContainer.appendChild(app.view)
 
-const welcomeMessage = new Text('joebinney.com', {
-    fontFamily: 'monospace',
-    fontSize: 50,
-    fill: 0xffffff
-})
-welcomeMessage.anchor.set(0.5, 0.5)
-welcomeMessage.position.set(app.view.width/2, app.view.height/2)
-app.stage.addChild(welcomeMessage)
+app.loader.add(roomUrl)
+    .load((loader, resources) => {
+        const room = new Sprite(resources[roomUrl].texture)
+        app.stage.addChild(room)
+    })

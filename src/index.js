@@ -6,8 +6,10 @@ const app = new Application({
     width: 480,
     height: 270
 })
-app.view.id = 'appCanvas'
-document.body.appendChild(app.view)
+app.view.id = 'app_canvas'
+
+const canvasContainer = document.getElementById('canvas_container')
+canvasContainer.appendChild(app.view)
 
 const welcomeMessage = new Text('joebinney.com', {
     fontFamily: 'monospace',
